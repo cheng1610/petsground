@@ -83,7 +83,7 @@ button {
   object-fit: cover;
 }
 
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .home {
     flex-direction: column;
     text-align: center;
@@ -112,7 +112,7 @@ button {
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .home {
     padding-inline: 1.5rem;
     padding-block: 2rem;
@@ -127,7 +127,6 @@ button {
   }
 
   .buttons {
-    flex-direction: column;
     gap: 10px;
   }
 

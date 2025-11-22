@@ -19,17 +19,17 @@ const services = [
   {
     icon: PawPrint,
     title: "Pet Interaction Zone",
-    description: "Get up close and personal with adorable animals, feed them and play with them."
+    description: "Get up close and personal with adorable animals."
   },
   {
     icon: Coffee,
     title: "Pet Café",
-    description: "Enjoy aromatic coffee and desserts, and relax in the company of your furry friend."
+    description: "Enjoy coffee and relax in the company of your furry friend."
   },
   {
     icon: GraduationCap,
     title: "Adoption & Care Workshop",
-    description: "Learn about adoption and care so that love can extend to every animal."
+    description: "Learn about adoption so that love can extend to every animal."
   }
 ];
 </script>

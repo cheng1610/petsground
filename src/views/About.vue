@@ -2,11 +2,18 @@
   <section class="about" id="about">
     <div class="about__container">
       <div class="about__text">
-        <h2>About Our Pet Paradise</h2>
+        <h2>About PetsGround</h2>
         <p>
-          Founded with love and passion, our Pet Paradise brings together the finest pets and high-quality treats in English style. We are committed to providing a safe, caring environment where every pet can thrive.
+          At PetsGround, we believe every pet deserves a loving home and a happy life. 
+          We provide a safe and joyful environment where pets and pet lovers can come together.
         </p>
-        <button>Learn More</button>
+        <p>
+          From adoption support to interactive zones and pet-friendly cafes, our mission is to bring happiness 
+          to pets and their humans alike. Join us and discover a community built with care and passion.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="../assets/about.jpg" alt="Happy Pets" />
       </div>
     </div>
   </section>
@@ -19,16 +26,12 @@ export default {
 </script>
 
 <style>
-:root {
-  --bg-card: #38736D;
-  --accent-hover: #246534;
-  --text-main: #ffffff;
-}
-
 .about {
-  background-color: #465b52;
-  color: var(--text-main);
-  padding: 80px 50px;
+  padding: 60px 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #424242;
 }
 
 .about__container {
@@ -36,48 +39,59 @@ export default {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .about__text {
   flex: 1;
   min-width: 300px;
+  margin-right: 2rem;
 }
 
 .about__text h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #183b3b;
 }
 
 .about__text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
-  color: #d9e9de;
   margin-bottom: 15px;
 }
 
+.about__image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
 
-@media (max-width: 1024px) {
+.about__image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  border: 6px rgb(149, 132, 132) solid;
+  object-fit: cover;
+  transition: all .3s ease;
+}
+
+.about__image img:hover{
+  transform: rotate(10deg);
+}
+
+@media (width < 1024px) {
   .about__container {
     flex-direction: column;
     text-align: center;
   }
 
   .about__text {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about {
-    padding: 50px 25px;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 
   .about__text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .about__text p {

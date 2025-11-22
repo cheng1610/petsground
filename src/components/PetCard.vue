@@ -88,6 +88,10 @@ export default {
   padding-block: .5rem;
 }
 
+.card__content button{
+  border-radius: 5px;
+}
+
 .pet__card h3 {
   color: rgb(49, 49, 49);
   font-size: 1.6rem;
